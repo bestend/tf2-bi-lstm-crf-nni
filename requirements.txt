@@ -1,0 +1,10 @@
+tensorflow == 2.2.0
+tensorflow_addons == 0.10.0
+devtools == 0.5.1
+pydantic == 1.4
+ruamel.yaml == 0.16.10
+tqdm == 4.43.0
+#optional
+tensorflow_hub == 0.8.0 #optional
+nni == 1.6
+smac == 0.8.0

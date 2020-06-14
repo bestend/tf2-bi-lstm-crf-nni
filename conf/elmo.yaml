@@ -1,0 +1,39 @@
+train_paths:
+  - data/ner/train.pkl
+valid_paths:
+  - data/ner/valid.pkl
+test_paths:
+  - data/ner/test.pkl
+vocab_path: data/ner/vocab.pkl
+output_dir: trained/elmo
+pretrained_embedding_path: pretrained/glove.6B/glove.6B.100d.txt
+do_lowercase: true
+
+batch_size: 256
+optimizer: adam
+learning_rate: 1e-3
+lr_decay_rate: 6e-5
+epochs: 50
+early_stop_patience: 10
+train_steps: 100
+
+token_dropout: 0.45
+pos_dropout: 0.025
+char_dropout: 0.06
+
+use_elmo: true
+elmo_output: elmo
+#emb_dim: 100
+char_emb_dim: 50
+pos_emb_dim: 50
+max_word: 100
+max_char: 15
+
+lstm_layer_size: 1
+lstm_units: 300
+lstm_recurrent_dropout: 0.25
+lstm_dropout: 0.2
+
+char_embedding_type: cnn
+char_cnn_window_size: 4
+char_cnn_filter_num: 30

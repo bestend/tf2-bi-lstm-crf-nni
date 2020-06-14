@@ -1,0 +1,16 @@
+{
+    "batch_size":  { "_type": "choice", "_value": [16, 32] },
+    "token_dropout": { "_type": "uniform", "_value": [0.1, 0.5] },
+    "pos_dropout": { "_type": "uniform", "_value": [0.0, 0.5] },
+    "char_dropout": { "_type": "uniform", "_value": [0.0, 0.5] },
+    "char_emb_dim": { "_type": "quniform", "_value": [30, 50, 10] },
+    "pos_emb_dim": { "_type": "quniform", "_value": [30, 50, 10] },
+    "learning_rate": { "_type": "uniform", "_value": [0.001, 0.01] },
+    "lr_decay_rate": { "_type": "uniform", "_value": [0.000001, 0.0001] },
+    "char_cnn_window_size": {"_type": "quniform", "_value": [2, 4, 1]},
+    "char_cnn_filter_num": { "_type": "quniform", "_value": [20, 40, 10]},
+    "lstm_layer_size": { "_type": "quniform", "_value": [1, 2, 1] },
+    "lstm_units": { "_type": "quniform", "_value": [200, 500, 100] },
+    "lstm_recurrent_dropout": { "_type": "uniform", "_value": [0.1, 0.5] },
+    "lstm_dropout": { "_type": "uniform", "_value": [0.1, 0.5] }
+}

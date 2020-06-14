@@ -1,0 +1,4 @@
+{
+    "batch_size":  { "_type": "choice", "_value": [128, 256] },
+    "learning_rate": { "_type": "uniform", "_value": [0.001, 0.004] }
+}

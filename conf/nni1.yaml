@@ -1,0 +1,32 @@
+train_paths:
+  - data/ner/train.pkl
+valid_paths:
+  - data/ner/valid.pkl
+test_paths:
+  - data/ner/test.pkl
+vocab_path: data/ner/vocab.pkl
+output_dir: trained/auto
+pretrained_embedding_path: pretrained/glove.6B/glove.6B.100d.txt
+do_lowercase: true
+
+batch_size: 64
+optimizer: adam
+learning_rate: 4e-3
+lr_decay_rate: 1e-5
+epochs: 30
+early_stop_patience: 10
+train_steps: 100
+
+emb_dim: 100
+char_emb_dim: 50
+pos_emb_dim: 30
+max_word: 100
+max_char: 15
+
+lstm_layer_size: 1
+lstm_units: 500
+lstm_recurrent_dropout: 0.2
+lstm_dropout: 0.2
+
+char_cnn_window_size: 3
+char_cnn_filter_num: 30

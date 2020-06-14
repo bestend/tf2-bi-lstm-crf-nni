@@ -1,0 +1,5 @@
+{
+    "char_cnn_window_size": {"_type": "quniform", "_value": [2, 4, 1]},
+    "char_cnn_filter_num": { "_type": "quniform", "_value": [20, 40, 10]},
+    "lstm_units": { "_type": "quniform", "_value": [200, 400, 100] }
+}

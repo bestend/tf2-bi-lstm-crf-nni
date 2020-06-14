@@ -1,0 +1,2 @@
+homepage: https://nlp.stanford.edu/projects/glove/
+download : http://nlp.stanford.edu/data/glove.6B.zip

@@ -1,0 +1,19 @@
+authorName: john kim
+experimentName: ner
+trialConcurrency: 12
+#maxExecDuration: 24h
+#maxTrialNum: 10
+trainingServicePlatform: local
+searchSpacePath: search_space-2.json
+useAnnotation: false
+tuner:
+  builtinTunerName: SMAC
+  classArgs:
+    optimize_mode: maximize
+trial:
+  command: python3 train.py --conf conf/nni2.yaml --do_nni true
+  codeDir: ..
+  gpuNum: 1
+localConfig:
+  maxTrialNumPerGpu: 3
+  useActiveGpu: true

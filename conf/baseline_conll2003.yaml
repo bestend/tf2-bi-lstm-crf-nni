@@ -1,0 +1,36 @@
+train_paths:
+  - data/conll2003/train.pkl
+valid_paths:
+  - data/conll2003/valid.pkl
+test_paths:
+  - data/conll2003/test.pkl
+vocab_path: data/conll2003/vocab.pkl
+output_dir: trained/conll2003
+pretrained_embedding_path: pretrained/glove.6B/glove.6B.100d.txt
+do_lowercase: true
+
+batch_size: 32
+optimizer: adam
+learning_rate: 4e-3
+lr_decay_rate: 1e-5
+epochs: 100
+early_stop_patience: 10
+train_steps: 100
+
+token_dropout: 0.5
+pos_dropout: 0.5
+char_dropout: 0.5
+
+emb_dim: 100
+char_emb_dim: 30
+pos_emb_dim: 30
+max_word: 100
+max_char: 15
+
+lstm_layer_size: 1
+lstm_units: 200
+lstm_recurrent_dropout: 0.0
+lstm_dropout: 0.5
+
+char_cnn_window_size: 3
+char_cnn_filter_num: 30
