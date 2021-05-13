@@ -1,7 +1,7 @@
 tensorflow == 2.2.0
 tensorflow_addons == 0.10.0
 devtools == 0.5.1
-pydantic == 1.4
+pydantic == 1.6.2
 ruamel.yaml == 0.16.10
 tqdm == 4.43.0
 #optional
